@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loan Prediction</title>
+    <link rel ="stylesheet" href="/static/css/style.css">
+</head>
+<body background ="/static/images/background.jpg">
+    <div class ="input form">
+        <form action ="{{url_for('predict')}}" method ="post" id ="input head"> 
+            <h2 id ="heading">Loan Prediction Form</h2>
+            <h3 id ="input">Enter the details given below</h3>
+            <table >
+                <tr>
+                    <td><label for="LoanCurrentDaysDelinquent">Loan Current Days Delinquent*</label></td>
+                    <td><input class="inputfield" name="LoanCurrentDaysDelinquent" type="number" required = "required"></td>
+                </tr>
+                <tr>
+                    <td><label for="LP_GrossPrincipalLoss">LP Gross Principal Loss*</label></td>
+                    <td><input class="inputfield" name="LP_GrossPrincipalLoss" type="decimal" required = "required"></td>
+                </tr>
+                <tr>
+                    <td><label for="LP_NetPrincipalLoss">LP Net Principal Loss*</label></td>
+                    <td><input class="inputfield" name="LP_NetPrincipalLoss" type="decimal" required = "required" ></td>
+                </tr>
+                <tr>
+                    <td><label for="LoanFirstDefaultedCycleNumber">Loan First Defaulted Cycle Number*</label></td>
+                    <td><input class="inputfield" name="LoanFirstDefaultedCycleNumber" type="decimal" required = "required" ></td>
+                </tr>
+                <tr>
+                    <td><label for="BorrowerAPR">Borrower APR*</label></td>
+                    <td><input class="inputfield" name="BorrowerAPR" type="decimal" required = "required"></td>
+                </tr>
+                <tr>
+                    <td><label for="EstimatedReturn">Estimated Return*</label></td>
+                    <td><input class="inputfield" name="EstimatedReturn" type="decimal" required = "required"></td>
+                </tr>
+                <tr>
+                    <td><label for="LoanNumber">Loan Number*</label></td>
+                    <td><input class="inputfield" name="LoanNumber" type="number" required = "required"></td>
+                </tr>
+                <tr>
+                    <td><label for="LoanMonthsSinceOrigination">Loan Months Since Origination*</label></td>
+                    <td><input class="inputfield" name="LoanMonthsSinceOrigination" type="number" required = "required"></td>
+                </tr>
+                <tr>
+                    <td><label for="EstimatedLoss">Estimated Loss*</label></td>
+                    <td><input class="inputfield" name="EstimatedLoss" type="decimal" required = "required"></td>
+                </tr>
+                <tr>
+                    <td><label for="EstimatedEffectiveYield">Estimated Effective Yield*</label></td>
+                    <td><input class="inputfield" name="EstimatedEffectiveYield " type="decimal" required = "required"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="ListingNumber">Listing Number*</label></td>
+                    <td><input class="inputfield" name="ListingNumber" type="number" required = "required"></td>
+                </tr>
+            </table>
+            <td><br><button id="submit" class="submit-btn" type="submit "><b>Submit</b></button>
+            </form>
+        </div>
+    </body>
+</html>
